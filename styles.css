@@ -1,0 +1,28 @@
+body {
+    background: slategray;
+}
+
+#wrapper {
+    display:flex;
+    flex-direction: row;
+    align-items:flex-start;
+}
+
+.caterpillar {
+    width: 100px;
+    height: 100px;
+    border: rgb(11, 162, 250) solid 4px;
+    border-radius: 50px;
+    position: relative;
+    left: 100px;
+    animation-name: moveit;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+    @keyframes moveit {
+        0% {width: 100px; left: 100px;}
+        50% {width: 200px; left: 100px;}
+        100% {width:100px; left: 200px;}
+    }
+
